@@ -1,0 +1,36 @@
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+var a = userInput[0];
+var b = 0;
+var c = [];
+if (a == 0)
+{
+    console.log("NULL")
+}
+else{
+    for (i=1; i<=a; i++)
+    {
+        b = i * 9;
+        c.push(b);
+        //var c = b.join();
+        
+    }
+    var d = c.join(' ');
+    console.log(d);
+}
+
+});
