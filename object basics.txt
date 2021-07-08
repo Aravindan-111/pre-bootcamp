@@ -1,0 +1,15 @@
+class guvi_student{
+    constructer(mark1, mark2) 
+    {
+        this.mark1 = mark1;
+        this.mark2 = mark2;
+    }
+        print_mark()
+        {
+            return "mark1 = "+this.mark1+"mark2 = "+this.mark2;
+        }
+    }
+    student1 = new guvi_student(79,76);
+    student2 = new guvi_student(23,54);
+    student1.print_mark();
+    student2.print_mark();
